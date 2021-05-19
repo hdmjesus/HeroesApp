@@ -11,7 +11,7 @@ export const HeroeCard = ({
 }) => {
   return (
     <div
-      className="card mt-5 mb-3 m-1 "
+      className="card mt-5 mb-3 m-1  text-xs"
       style={{ maxWidth: 350, padding: 0, minWidth: 150 }}
     >
       <div className="row g-0">
@@ -31,7 +31,9 @@ export const HeroeCard = ({
               {" "}
               <small className="text-muted"> {first_appearance}</small>
             </p>
-            <Link to={`./hero/${id}`}>Mas...</Link>
+            <Link className="text-blue-500" to={`./hero/${id}`}>
+              Mas...
+            </Link>
           </div>
         </div>
       </div>

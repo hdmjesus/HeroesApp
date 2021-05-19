@@ -64,9 +64,9 @@ export const SearchScreen = ({ history }) => {
           {" "}
           <h4 className="mv-3">Results</h4>
           <hr />
-          {q === "" && (
+          {q === " " && error == false ? (
             <div className="alert alert-info w-full m-2"> Search a heroe</div>
-          )}
+          ) : null}
           {error && heroesFiltered.length === 0 ? (
             <div className="alert alert-danger m-2">
               <p>

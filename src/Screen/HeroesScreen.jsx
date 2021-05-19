@@ -20,13 +20,13 @@ export const HeroesScreen = ({ history }) => {
     }
   };
   return (
-    <div className="animate__animated animate__fadeInLeft">
+    <div className="animate__animated animate__fadeInLeft p-7 md:flex">
       <div className="">
         <img className=" " src={`../images/${heroid}.webp`} alt={heroid} />
       </div>
-      <div className="">
-        <h3>{superhero}</h3>
-        <ul className="list-group list-group-flush">
+      <div className="container  flex mt-4 flex-col items-center md:items-start   ">
+        <h3 className="md:ml-28 text-lg uppercase font-bold">{superhero}</h3>
+        <ul className="list-group list-group-flush text-xs md:text-base md:m-auto md:mb-5 md:mt-5">
           <li className="list-group-item">
             {" "}
             <b>Alter Ego: </b> {alter_ego}
@@ -39,10 +39,16 @@ export const HeroesScreen = ({ history }) => {
             {" "}
             <b>First Apearance: </b> {first_appearance}
           </li>
+          <li className="list-group-item">
+            {" "}
+            <b>Characters: </b> {characters}
+          </li>
         </ul>
-        <h5> Characters</h5>
-        <p>{characters}</p>
-        <button className="btn btn-outline-info" onClick={handleReturn}>
+
+        <button
+          className="btn btn-outline-info mt-3 m-auto"
+          onClick={handleReturn}
+        >
           Return
         </button>
       </div>
