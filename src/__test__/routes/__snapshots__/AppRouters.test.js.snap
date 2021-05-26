@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <AppRouters/> should show login if is not authenticated  1`] = `
+<div
+  className="container mt-5"
+>
+  <h1
+    className="m-3"
+  >
+    LoginScreen
+  </h1>
+  <hr />
+  <button
+    className="btn btn-primary m-4"
+    onClick={[Function]}
+  >
+    Login
+  </button>
+</div>
+`;
+
+exports[`Pruebas en el componente <AppRouters/> should show the ScreenMarvel if is authenticated  1`] = `
+<div
+  className="container mt-5"
+>
+  <h1
+    className="m-3"
+  >
+    LoginScreen
+  </h1>
+  <hr />
+  <button
+    className="btn btn-primary m-4"
+    onClick={[Function]}
+  >
+    Login
+  </button>
+</div>
+`;

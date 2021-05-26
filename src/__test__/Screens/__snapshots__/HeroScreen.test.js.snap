@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <HeroScreen/> debe de mostrar un heroe si el parametro existe y se encuentra   1`] = `
+<div
+  className="animate__animated animate__fadeInLeft p-7 md:flex"
+>
+  <div
+    className=""
+  >
+    <img
+      alt="dc-batman"
+      className=" "
+      src="../images/dc-batman.webp"
+    />
+  </div>
+  <div
+    className="container  flex mt-4 flex-col items-center md:items-start   "
+  >
+    <h3
+      className="md:ml-28 text-lg uppercase font-bold"
+    >
+      Batman
+    </h3>
+    <ul
+      className="list-group list-group-flush text-xs md:text-base md:m-auto md:mb-5 md:mt-5"
+    >
+      <li
+        className="list-group-item"
+      >
+         
+        <b>
+          Alter Ego: 
+        </b>
+         
+        Bruce Wayne
+      </li>
+      <li
+        className="list-group-item"
+      >
+         
+        <b>
+          Publisher: 
+        </b>
+         
+        DC Comics
+      </li>
+      <li
+        className="list-group-item"
+      >
+         
+        <b>
+          First Apearance: 
+        </b>
+         
+        Detective Comics #27
+      </li>
+      <li
+        className="list-group-item"
+      >
+         
+        <b>
+          Characters: 
+        </b>
+         
+        Bruce Wayne
+      </li>
+    </ul>
+    <button
+      className="btn btn-outline-info mt-3 m-auto"
+      onClick={[Function]}
+    >
+      Return
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Pruebas en <HeroScreen/> debe mostrar el componente redirect si no hay algumentos en el url 1`] = `""`;

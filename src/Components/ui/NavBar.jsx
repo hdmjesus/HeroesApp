@@ -8,7 +8,6 @@ export const NavBar = () => {
   const history = useHistory();
 
   const handleLogout = () => {
-    //
     const userLogin = {};
     const actionLogout = { type: types.logout, payload: userLogin };
     dispatch(actionLogout);

@@ -5,7 +5,7 @@ import { getHeroById } from "../selectors/getHeroesById";
 export const HeroesScreen = ({ history }) => {
   const { heroid } = useParams();
   const hero = getHeroById(heroid);
-  console.log(hero);
+
   if (!hero) {
     return <Redirect to="/" />;
   }

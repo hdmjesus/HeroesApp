@@ -12,7 +12,7 @@ const init = () => {
 };
 const { Provider } = AuthContext;
 
-const App = () => {
+export const AppRouters = () => {
   const [user, dispatch] = useReducer(authReducer, {}, init);
 
   useEffect(() => {
@@ -40,5 +40,3 @@ const App = () => {
     </BrowserRouter>
   );
 };
-
-export default App;

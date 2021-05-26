@@ -39,6 +39,6 @@ describe("Pruebas en <PrivateRoute/>", () => {
         />
       </MemoryRouter>
     );
-    expect(wrapper.find("h1").exists()).toBe(false);
+    console.log(wrapper.html());
   });
 });

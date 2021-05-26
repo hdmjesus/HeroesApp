@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./tailwind.output.css";
-import App from "./routes/AppRouters";
+import { AppRouters } from "./routes/AppRouters";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<AppRouters />, document.getElementById("root"));
