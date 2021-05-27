@@ -1,0 +1,254 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Probandoo el <SearchScreen/> debe de mostrar a batman y el input con el valor del querystring 1`] = `
+<div>
+  <div
+    className=" flex gap-5 flex-col md:flex-row container  mt-4"
+  >
+    <div
+      className="md:w-5/12"
+    >
+      <h4
+        className="m-3"
+      >
+        Search your heroe
+      </h4>
+      <hr />
+      <form
+        action=""
+        className="container mt-3 flex flex-col"
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control outline-none "
+          id=""
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Find you hero"
+          type="text"
+          value="batman"
+        />
+        <button
+          className="btn w-2/4 m-auto  md:w-full mt-3 btn-block btn-outline-primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      className="md:w-8/12 mt-4 "
+    >
+       
+      <h4
+        className="mv-3"
+      >
+        Results
+      </h4>
+      <hr />
+      <div
+        className="flex flex-wrap m-auto"
+      >
+        <div
+          className="card mt-5 mb-3 m-1  text-xs"
+          style={
+            Object {
+              "maxWidth": 350,
+              "minWidth": 150,
+              "padding": 0,
+            }
+          }
+        >
+          <div
+            className="row g-0"
+          >
+            <div
+              className="col-md-4"
+            >
+              <img
+                alt="superhero"
+                className="card-img"
+                src="./images/dc-batman.webp"
+              />
+            </div>
+            <div
+              className="col-md-8"
+            >
+              <div
+                className="card-body"
+              >
+                <h5
+                  className="card-title"
+                >
+                  Batman
+                </h5>
+                <p
+                  className="card-text"
+                >
+                  Bruce Wayne
+                </p>
+                <p
+                  className="card-text"
+                >
+                   
+                  <small
+                    className="text-muted"
+                  >
+                     
+                    Detective Comics #27
+                  </small>
+                </p>
+                <a
+                  className="text-blue-500"
+                  href="/hero/dc-batman"
+                  onClick={[Function]}
+                >
+                  Mas...
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Probandoo el <SearchScreen/> debe mostrar correctamente el componente con valores por defecto 1`] = `
+<div>
+  <div
+    className=" flex gap-5 flex-col md:flex-row container  mt-4"
+  >
+    <div
+      className="md:w-5/12"
+    >
+      <h4
+        className="m-3"
+      >
+        Search your heroe
+      </h4>
+      <hr />
+      <form
+        action=""
+        className="container mt-3 flex flex-col"
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control outline-none "
+          id=""
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Find you hero"
+          type="text"
+          value=" "
+        />
+        <button
+          className="btn w-2/4 m-auto  md:w-full mt-3 btn-block btn-outline-primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      className="md:w-8/12 mt-4 "
+    >
+       
+      <h4
+        className="mv-3"
+      >
+        Results
+      </h4>
+      <hr />
+      <div
+        className="alert alert-info w-full m-2"
+      >
+         Search a heroe
+      </div>
+      <div
+        className="alert alert-danger m-2"
+      >
+        <p>
+          Error, personaje 
+          <b>
+             
+          </b>
+           no econtrado
+        </p>
+      </div>
+      <div
+        className="flex flex-wrap m-auto"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Probandoo el <SearchScreen/> debe mostrar un error si no se encunetra el Heroe  1`] = `
+<div>
+  <div
+    className=" flex gap-5 flex-col md:flex-row container  mt-4"
+  >
+    <div
+      className="md:w-5/12"
+    >
+      <h4
+        className="m-3"
+      >
+        Search your heroe
+      </h4>
+      <hr />
+      <form
+        action=""
+        className="container mt-3 flex flex-col"
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control outline-none "
+          id=""
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Find you hero"
+          type="text"
+          value="batman1234"
+        />
+        <button
+          className="btn w-2/4 m-auto  md:w-full mt-3 btn-block btn-outline-primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      className="md:w-8/12 mt-4 "
+    >
+       
+      <h4
+        className="mv-3"
+      >
+        Results
+      </h4>
+      <hr />
+      <div
+        className="alert alert-danger m-2"
+      >
+        <p>
+          Error, personaje 
+          <b>
+            batman1234
+          </b>
+           no econtrado
+        </p>
+      </div>
+      <div
+        className="flex flex-wrap m-auto"
+      />
+    </div>
+  </div>
+</div>
+`;

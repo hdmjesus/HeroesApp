@@ -50,6 +50,7 @@ export const SearchScreen = ({ history }) => {
               placeholder="Find you hero"
               onChange={handleInputChange}
               autoComplete="off"
+              value={searchText}
             />
             <button
               type="submit"
@@ -67,13 +68,13 @@ export const SearchScreen = ({ history }) => {
           {q === " " && error == false ? (
             <div className="alert alert-info w-full m-2"> Search a heroe</div>
           ) : null}
-          {error && heroesFiltered.length === 0 ? (
+          {heroesFiltered.length === 0 && !error && (
             <div className="alert alert-danger m-2">
               <p>
                 Error, personaje <b>{q}</b> no econtrado
               </p>
             </div>
-          ) : null}
+          )}
           <div className="flex flex-wrap m-auto">
             {heroesFiltered.map((hero) => (
               <HeroeCard key={hero.id} {...hero} />
