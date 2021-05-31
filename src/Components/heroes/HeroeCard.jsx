@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { heroImages } from "../../helpers/heroImages";
 
 export const HeroeCard = ({
   id,
@@ -17,7 +18,7 @@ export const HeroeCard = ({
       <div className="row g-0">
         <div className="col-md-4">
           <img
-            src={`./images/${id}.webp`}
+            src={heroImages(`./${id}.webp`).default}
             className="card-img"
             alt="superhero"
           />

@@ -1,5 +1,6 @@
 import React from "react";
 import { Redirect, useParams } from "react-router";
+import { heroImages } from "../helpers/heroImages";
 import { getHeroById } from "../selectors/getHeroesById";
 
 export const HeroesScreen = ({ history }) => {
@@ -22,7 +23,7 @@ export const HeroesScreen = ({ history }) => {
   return (
     <div className="animate__animated animate__fadeInLeft p-7 md:flex">
       <div className="">
-        <img className=" " src={`../images/${heroid}.webp`} alt={heroid} />
+        <img src={heroImages(`./${heroid}.webp`).default} alt={heroid} />
       </div>
       <div className="container  flex mt-4 flex-col items-center md:items-start   ">
         <h3 className="md:ml-28 text-lg uppercase font-bold">{superhero}</h3>
